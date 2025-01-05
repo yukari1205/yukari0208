@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yukari1205</title>
+    <link rel="stylesheet" href="css/main.css"> 
+    <style>
+   
+    </style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('img/background2.png');
+        }
+        </style>
+        
+    <div class="navbar">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我</a>
+        <a href="original.html">原創小寶們</a>
+        <a href="fanworks.html">夢向創作</a>
+    </div>
+   
+    <div class="image-container">
+            <img decoding="async" src="img/231221.png">
+        </div>
+    </div>
+
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="img/raru.png" alt="Image 1">
+            <h3>朝</h3>
+            <p>異色瞳漂亮小男孩,小小隻但武力值很高<br><br>
+           喜歡打扮和經營SNS<br><br>
+           不擅長料理,比較沒耐心容易不耐煩<br><br>
+           剛認識的時候覺得七洋是怪人<br><br>
+           順帶一提耳洞有五個(左三右二)<br><br>
+        </p>
+        </div>
+        <div class="image-item">
+            <img src="img/nana.png" alt="Image 2">
+            <h3>七洋</h3>
+            <p>成績優異的模範好學生<br><br>
+                興趣是畫圖和益智遊戲<br><br>
+                對流行事物不擅長,也不玩SNS,有點像小老頭<br><br>
+                莫名地對朝很感興趣所以老是找人家<br><br>
+                交往後也打了耳洞(左耳)
+            </p>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <div class="slider" id="slider">
+            <img decoding="async" src="img/threesome.PNG" alt="兔兔图片">
+            <img decoding="async" src="img/240326.png" alt="小咪图片">
+            <img decoding="async" src="img/240320.png" alt="咚图片">
+            <img decoding="async" src="img/231227.png" alt="小咪图片">
+   
+        </div>
+    </div>
+
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="img/23122702.png" alt="Image 1">
+            <h3>玖川</h3>
+            <p>逃家小狐狸,紅髮是染的<br><br>
+               開朗愛笑很討長輩喜歡,很會讀空氣<br><br>
+              和孫芽在同一家麵店工作,感情還不錯<br><br>
+               很想和于璟打好關係,但對方好像不太想
+            </p>
+        </div>
+        <div class="image-item">
+            <img src="img//231213.png" alt="Image 2">
+            <h3>孫芽</h3>
+            <p>和于璟是青梅竹馬<br><br>
+             樂天派小狗,有點傻呼呼<br><br>
+               因為家人因素曾搬離小鎮幾年<br><br>
+               現在和于璟一起住在大叔家<br><br>
+              
+            </p>
+        </div>
+        <div class="image-item">
+            <img src="img/23122703.png" alt="Image 3">
+            <h3>于璟</h3>
+            <p>彆扭小龍<br><br>
+               有點嘴賤,不太喜歡人群<br><br>
+                喜歡喝茶和翻閱書籍<br><br>
+                對玖川臉很臭但沒有真的討厭
+            </p>
+        </div>
+    </div>
+    
+
+    <script>
+        const images = [
+            'img/兔兔.png', 
+            'img/咚.png', 
+            'img/小咪.png'  
+        ];
+        let currentIndex = 0;
+
+        function changeImage() {
+            const slider = document.getElementById('slider');
+            currentIndex = (currentIndex + 1) % images.length; 
+            const offset = -currentIndex * 100; 
+            slider.style.transform = `translateX(${offset}%)`; 
+        }
+
+        setInterval(changeImage, 5000); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yukari1205</title>
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('img/background2.png');
+          
+        }
+        </style>
+        
+        <div class="navbar">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我</a>
+            <a href="original.html">原創小寶們</a>
+            <a href="fanworks.html">夢向創作</a>
+        </div>
+    
+        <div class="image-container">
+            <div class="slider" id="slider">
+                <img decoding="async" src="img/120501.jpg" alt="兔兔图片">
+                <img decoding="async" src="img/120502.jpg" alt="咚图片">
+                <img decoding="async" src="img/120503.jpg" alt="小咪图片">
+            </div>
+        </div>
+    
+       
+        <div class="background-box">
+            <img decoding="async" src="img/meeee.png" alt="头像图片" class="avatar-image">
+            <div class="name">夏柚🐈‍⬛</div>
+            <div class="bio">
+                <p>今天也喜歡小狗!</p> 
+                <p>坑單很雜什麼都畫,近期主要SKZ|GOT7|三枝明那|刀劍亂舞</p>
+                <p>此刻正在刀劍亂舞被江家男絕讚綁架中👍</p>
+              
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/uricaqaq" target="_blank" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="icon-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="icon-link"><i class="fab fa-instagram"></i></a>          
+        </div>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ovHoY8UBIu8" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
+
+    
+    
+        
+        </div>
+        
+        
+    <script>
+        const images = [
+            'img/120501.png', 
+            'img/120502.png', 
+            'img/120503.png'  
+        ];
+        let currentIndex = 0;
+
+        function changeImage() {
+            const slider = document.getElementById('slider');
+            currentIndex = (currentIndex + 1) % images.length; 
+            const offset = -currentIndex * 100; 
+            slider.style.transform = `translateX(${offset}%)`; 
+        }
+
+        setInterval(changeImage, 5000); 
+    </script>
+</body>
+</html>
